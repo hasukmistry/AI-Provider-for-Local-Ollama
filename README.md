@@ -125,12 +125,6 @@ The plugin includes hardening for endpoint and settings handling:
 - Settings mutation hooks are capability-gated (`manage_options` / multisite network equivalent).
 - Settings hooks do not mutate on error responses.
 
-## API key field note
-
-WordPress Connectors currently renders setup flow for API-key style connectors. This plugin reuses that setup field as endpoint input and adjusts wording in admin UI script.
-
-No real Ollama cloud API key is required for local usage.
-
 ## Caution
 
 This plugin codebase was developed with significant AI assistance.
