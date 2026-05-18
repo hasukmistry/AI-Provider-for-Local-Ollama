@@ -416,13 +416,6 @@ function wpnull_ollama_local_force_settings_save( WP_REST_Response $response, WP
 		return $response;
 	}
 
-	if ( method_exists( $response, 'get_status' ) ) {
-		$status = (int) $response->get_status();
-		if ( $status >= 400 ) {
-			return $response;
-		}
-	}
-
 	$setting_name = WPNULL_OLLAMA_LOCAL_SETUP_SETTING;
 	$key          = $request->get_param( $setting_name );
 
